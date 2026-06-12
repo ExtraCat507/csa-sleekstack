@@ -1,0 +1,15 @@
+{
+  "source": "examples/cat.ss",
+  "schedule": "examples/cat.schedule",
+  "output": "cat",
+  "ticks": 737,
+  "source_sha256": "40a4e696dfd4de46b151ac571b5ec1062213dc2a98ffa14e8860e7dfd061262e",
+  "machine_code_sha256": "13832c7c9332b1e0695ff6f9a772e7eadc58d2a70c15a4e98be8c3078e7306d5",
+  "data_image_sha256": "d88d1f9aaa031ad97df8d84987be4ecf1e77696f18b4d7d7ef5dea8d89106eaa",
+  "config_sha256": "31525e93a66de42ebace62678d4b2d2e02c518221fe8455dcca6ff92a5fdc1dc",
+  "log_contains": [
+    "INT ENTRY",
+    "OUT: 'cat'",
+    "iret.restore_pc"
+  ]
+}

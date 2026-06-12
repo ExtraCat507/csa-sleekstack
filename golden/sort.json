@@ -1,0 +1,15 @@
+{
+  "source": "examples/sort.ss",
+  "schedule": "examples/sort.schedule",
+  "output": "123",
+  "ticks": 822,
+  "source_sha256": "fe3c3aac6498e544fa7f7c42e2b3c1bc6b874b542911345401bb997abd7e5c78",
+  "machine_code_sha256": "fbc1f9115b204337daa312003130ed74aaa25556faa054d232e6eedf545e3027",
+  "data_image_sha256": "afd646052975cd97304d8c9ec2048e859faafd585de846147830ce4f7cef6d42",
+  "config_sha256": "5cb63f0e2fe283e8b942a2ff02ab42bf80924f38f9bb17a3bf66e1b9d67d6c96",
+  "log_contains": [
+    "INT ENTRY",
+    "OUT: '123'",
+    "store 31999"
+  ]
+}
