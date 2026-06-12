@@ -1,0 +1,14 @@
+{
+  "source": "examples/features.ss",
+  "schedule": null,
+  "output": "OK",
+  "ticks": 54,
+  "source_sha256": "e86bc84736a2d3455e670ce729b48b9e2f372c9ebc90f680771a7e2f5e5d101a",
+  "machine_code_sha256": "ac3aadb15a214671168f8225b767b8ccfb68cef321b70c5fd9e25fc941446b0c",
+  "data_image_sha256": "e8fb6e554ffae88e1a476a33dc161031b07305320af41816ccad809ca140dbd7",
+  "config_sha256": "dbd2be839a9781c1cde53d36d414532369abc8c4ff577333e4dcbbabc3f9ad0f",
+  "log_contains": [
+    "OUT: 'OK'",
+    "return"
+  ]
+}
