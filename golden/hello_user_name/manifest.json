@@ -1,0 +1,17 @@
+{
+    "case": "hello_user_name",
+    "source": "source.ss",
+    "schedule": "input.schedule",
+    "output": "What is your name?\nHello, Alice!",
+    "ticks": 3082,
+    "artifacts": {
+        "source_sha256": "985c38da33c209a3a430cabdc31ca6713d7a0bb587819ebe1d929a72d01b9440",
+        "machine_code_sha256": "2ae52ab92f9891b3a87d2a2f1558fa1812c2eb39b457d636c1d8ea5318f553cf",
+        "listing_sha256": "7aad1c082bc2c121d64616e27b780ad5eff7726a4f3e2ce9f5eb94d4c67b9d4e",
+        "config_sha256": "3523ed7a843db7fb41af8e44403b7d308177b6ce9a4ee23f93995dd277263b7d",
+        "data_image_sha256": "b3cf67defdaa096be0b0ed36dfbb0dc9b77f138c3522a5595942e14d91ee34fd",
+        "trace_sha256": "45169bd6fb5b4c1326379d84467f89d64cf6333fc7041c8761b7e42ff843d50c",
+        "stdout_sha256": "479fcdbe9ab824ed1a1595a80b881588ff02755d1b7a7f9671e6db2eddb913f7",
+        "schedule_sha256": "5f17f18ea6ee37fdaa6cdfc24d89c42dbf56866aef0f50000615cf46f433a352"
+    }
+}

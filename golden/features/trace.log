@@ -1,0 +1,54 @@
+TICK: 000000 | PC: 00005 | STEP: 0 | IR: jmp 5 | A: 0 | AR: 0 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: - | LATCH: PC | OUT: '' | jmp 5
+TICK: 000001 | PC: 00029 | STEP: 0 | IR: call 29 | A: 0 | AR: 0 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: RS.push(ret),PC | OUT: '' | call 29
+TICK: 000002 | PC: 00034 | STEP: 0 | IR: literal 7 | A: 0 | AR: 0 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [7] | RS: [10] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 7
+TICK: 000003 | PC: 00034 | STEP: 1 | IR: store 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [7] | RS: [10] | MEM: - | LATCH: AR | OUT: '' | store.addr 1
+TICK: 000004 | PC: 00039 | STEP: 0 | IR: store 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: write mem[1] <- 7 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000005 | PC: 00011 | STEP: 0 | IR: call 11 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10, 44] | MEM: - | LATCH: RS.push(ret),PC | OUT: '' | call 11
+TICK: 000006 | PC: 00011 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10, 44] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000007 | PC: 00016 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [7] | RS: [10, 44] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000008 | PC: 00016 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [7] | RS: [10, 44] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000009 | PC: 00021 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [7, 7] | RS: [10, 44] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000010 | PC: 00021 | STEP: 1 | IR: mul | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10, 44] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | mul.load_operands
+TICK: 000011 | PC: 00022 | STEP: 0 | IR: mul | A: 0 | AR: 1 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [10, 44] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | mul.write_result
+TICK: 000012 | PC: 00044 | STEP: 0 | IR: return | A: 0 | AR: 1 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [10] | MEM: - | LATCH: PC | OUT: '' | return
+TICK: 000013 | PC: 00044 | STEP: 1 | IR: store 2 | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [10] | MEM: - | LATCH: AR | OUT: '' | store.addr 2
+TICK: 000014 | PC: 00049 | STEP: 0 | IR: store 2 | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: write mem[2] <- 49 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000015 | PC: 00049 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000016 | PC: 00054 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [10] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000017 | PC: 00059 | STEP: 0 | IR: literal 49 | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49, 49] | RS: [10] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 49
+TICK: 000018 | PC: 00059 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000019 | PC: 00060 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [10] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000020 | PC: 00060 | STEP: 1 | IR: nif 100 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000021 | PC: 00065 | STEP: 0 | IR: nif 100 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000022 | PC: 00070 | STEP: 0 | IR: literal 3 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [3] | RS: [10] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 3
+TICK: 000023 | PC: 00071 | STEP: 0 | IR: stack_to_a | A: 3 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: A,PC | OUT: '' | stack_to_a
+TICK: 000024 | PC: 00071 | STEP: 1 | IR: a_load_+ | A: 3 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: AR | OUT: '' | aload.addr
+TICK: 000025 | PC: 00071 | STEP: 2 | IR: a_load_+ | A: 3 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [79] | RS: [10] | MEM: read mem[3] | LATCH: DS.push | OUT: '' | aload.read
+TICK: 000026 | PC: 00072 | STEP: 0 | IR: a_load_+ | A: 4 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [79] | RS: [10] | MEM: - | LATCH: A,PC | OUT: '' | aload.increment
+TICK: 000027 | PC: 00073 | STEP: 0 | IR: dup | A: 4 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [79, 79] | RS: [10] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000028 | PC: 00073 | STEP: 1 | IR: if 88 | A: 4 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [79] | RS: [10] | MEM: - | LATCH: ALU.left | OUT: '' | if.test
+TICK: 000029 | PC: 00078 | STEP: 0 | IR: if 88 | A: 4 | AR: 3 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [79] | RS: [10] | MEM: - | LATCH: PC | OUT: '' | if.branch
+TICK: 000030 | PC: 00078 | STEP: 1 | IR: store 31999 | A: 4 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [79] | RS: [10] | MEM: - | LATCH: AR | OUT: '' | store.addr 31999
+TICK: 000031 | PC: 00083 | STEP: 0 | IR: store 31999 | A: 4 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: write mem[31999] <- 79 | LATCH: OUT,PC | OUT: 'O' | store.write
+TICK: 000032 | PC: 00071 | STEP: 0 | IR: jmp 71 | A: 4 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: PC | OUT: 'O' | jmp 71
+TICK: 000033 | PC: 00071 | STEP: 1 | IR: a_load_+ | A: 4 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: AR | OUT: 'O' | aload.addr
+TICK: 000034 | PC: 00071 | STEP: 2 | IR: a_load_+ | A: 4 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [75] | RS: [10] | MEM: read mem[4] | LATCH: DS.push | OUT: 'O' | aload.read
+TICK: 000035 | PC: 00072 | STEP: 0 | IR: a_load_+ | A: 5 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [75] | RS: [10] | MEM: - | LATCH: A,PC | OUT: 'O' | aload.increment
+TICK: 000036 | PC: 00073 | STEP: 0 | IR: dup | A: 5 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [75, 75] | RS: [10] | MEM: - | LATCH: DS.dup,PC | OUT: 'O' | dup
+TICK: 000037 | PC: 00073 | STEP: 1 | IR: if 88 | A: 5 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [75] | RS: [10] | MEM: - | LATCH: ALU.left | OUT: 'O' | if.test
+TICK: 000038 | PC: 00078 | STEP: 0 | IR: if 88 | A: 5 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [75] | RS: [10] | MEM: - | LATCH: PC | OUT: 'O' | if.branch
+TICK: 000039 | PC: 00078 | STEP: 1 | IR: store 31999 | A: 5 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [75] | RS: [10] | MEM: - | LATCH: AR | OUT: 'O' | store.addr 31999
+TICK: 000040 | PC: 00083 | STEP: 0 | IR: store 31999 | A: 5 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: write mem[31999] <- 75 | LATCH: OUT,PC | OUT: 'OK' | store.write
+TICK: 000041 | PC: 00071 | STEP: 0 | IR: jmp 71 | A: 5 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: PC | OUT: 'OK' | jmp 71
+TICK: 000042 | PC: 00071 | STEP: 1 | IR: a_load_+ | A: 5 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: AR | OUT: 'OK' | aload.addr
+TICK: 000043 | PC: 00071 | STEP: 2 | IR: a_load_+ | A: 5 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [10] | MEM: read mem[5] | LATCH: DS.push | OUT: 'OK' | aload.read
+TICK: 000044 | PC: 00072 | STEP: 0 | IR: a_load_+ | A: 6 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [10] | MEM: - | LATCH: A,PC | OUT: 'OK' | aload.increment
+TICK: 000045 | PC: 00073 | STEP: 0 | IR: dup | A: 6 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [10] | MEM: - | LATCH: DS.dup,PC | OUT: 'OK' | dup
+TICK: 000046 | PC: 00073 | STEP: 1 | IR: if 88 | A: 6 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [10] | MEM: - | LATCH: ALU.left | OUT: 'OK' | if.test
+TICK: 000047 | PC: 00088 | STEP: 0 | IR: if 88 | A: 6 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [10] | MEM: - | LATCH: PC | OUT: 'OK' | if.branch
+TICK: 000048 | PC: 00089 | STEP: 0 | IR: drop | A: 6 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: PC | OUT: 'OK' | drop
+TICK: 000049 | PC: 00094 | STEP: 0 | IR: literal 0 | A: 6 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [10] | MEM: - | LATCH: DS.push,PC | OUT: 'OK' | literal 0
+TICK: 000050 | PC: 00095 | STEP: 0 | IR: drop | A: 6 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: PC | OUT: 'OK' | drop
+TICK: 000051 | PC: 00130 | STEP: 0 | IR: jmp 130 | A: 6 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [10] | MEM: - | LATCH: PC | OUT: 'OK' | jmp 130
+TICK: 000052 | PC: 00135 | STEP: 0 | IR: literal 0 | A: 6 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [10] | MEM: - | LATCH: DS.push,PC | OUT: 'OK' | literal 0
+TICK: 000053 | PC: 00010 | STEP: 0 | IR: return | A: 6 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: PC | OUT: 'OK' | return

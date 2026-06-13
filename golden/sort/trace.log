@@ -1,0 +1,822 @@
+TICK: 000000 | PC: 00005 | STEP: 0 | IR: jmp 5 | A: 0 | AR: 0 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: - | LATCH: PC | OUT: '' | jmp 5
+TICK: 000001 | PC: 00010 | STEP: 0 | IR: literal 0 | A: 0 | AR: 0 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000002 | PC: 00010 | STEP: 1 | IR: store 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: AR | OUT: '' | store.addr 1
+TICK: 000003 | PC: 00015 | STEP: 0 | IR: store 1 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: write mem[1] <- 0 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000004 | PC: 00020 | STEP: 0 | IR: literal 0 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000005 | PC: 00020 | STEP: 1 | IR: store 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: AR | OUT: '' | store.addr 2
+TICK: 000006 | PC: 00025 | STEP: 0 | IR: store 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: write mem[2] <- 0 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000007 | PC: 00030 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000008 | PC: 00030 | STEP: 1 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: AR | OUT: '' | store.addr 3
+TICK: 000009 | PC: 00035 | STEP: 0 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: write mem[3] <- 0 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000010 | PC: 00040 | STEP: 0 | IR: literal 0 | A: 0 | AR: 3 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000011 | PC: 00040 | STEP: 1 | IR: store 4 | A: 0 | AR: 4 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: AR | OUT: '' | store.addr 4
+TICK: 000012 | PC: 00045 | STEP: 0 | IR: store 4 | A: 0 | AR: 4 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: write mem[4] <- 0 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000013 | PC: 00050 | STEP: 0 | IR: literal 0 | A: 0 | AR: 4 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000014 | PC: 00050 | STEP: 1 | IR: store 5 | A: 0 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: AR | OUT: '' | store.addr 5
+TICK: 000015 | PC: 00055 | STEP: 0 | IR: store 5 | A: 0 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: write mem[5] <- 0 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000016 | PC: 00060 | STEP: 0 | IR: literal 0 | A: 0 | AR: 5 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000017 | PC: 00060 | STEP: 1 | IR: store 6 | A: 0 | AR: 6 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: AR | OUT: '' | store.addr 6
+TICK: 000018 | PC: 00065 | STEP: 0 | IR: store 6 | A: 0 | AR: 6 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: write mem[6] <- 0 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000019 | PC: 00070 | STEP: 0 | IR: literal 0 | A: 0 | AR: 6 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000020 | PC: 00070 | STEP: 1 | IR: store 7 | A: 0 | AR: 7 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: AR | OUT: '' | store.addr 7
+TICK: 000021 | PC: 00075 | STEP: 0 | IR: store 7 | A: 0 | AR: 7 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [] | MEM: write mem[7] <- 0 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000022 | PC: 00235 | STEP: 0 | IR: call 235 | A: 0 | AR: 7 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: RS.push(ret),PC | OUT: '' | call 235
+TICK: 000023 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000024 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000025 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000026 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000027 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000028 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000029 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000030 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000031 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000032 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000033 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000034 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000035 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000036 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000037 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000038 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000039 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000040 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000041 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000042 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000043 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000044 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000045 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000046 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000047 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000048 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000049 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000050 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000051 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000052 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000053 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000054 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000055 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000056 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000057 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000058 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000059 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000060 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000061 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000062 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000063 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000064 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000065 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000066 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000067 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000068 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000069 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000070 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000071 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000072 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000073 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000074 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000075 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000076 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000077 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000078 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000079 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000080 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000081 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000082 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000083 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000084 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000085 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000086 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000087 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000088 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000089 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000090 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000091 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000092 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000093 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000094 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000095 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000096 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000097 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000098 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000099 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000100 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246] | MEM: - | LATCH: IN_PORT,RS.push(PC) | OUT: '' | INT ENTRY: push PC
+TICK: 000101 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1] | MEM: - | LATCH: RS.push(SR) | OUT: '' | INT ENTRY: push SR
+TICK: 000102 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: RS.push(A) | OUT: '' | INT ENTRY: push A
+TICK: 000103 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | INT ENTRY: AR <- 0
+TICK: 000104 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 81] | RS: [80, 246, 1, 0] | MEM: read mem[0] | LATCH: DS.push(vector) | OUT: '' | INT ENTRY: read vector
+TICK: 000105 | PC: 00081 | STEP: 0 | IR: sub | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | INT ENTRY: PC <- vector
+TICK: 000106 | PC: 00081 | STEP: 1 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 31998
+TICK: 000107 | PC: 00086 | STEP: 0 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51] | RS: [80, 246, 1, 0] | MEM: read mem[31998] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000108 | PC: 00087 | STEP: 0 | IR: dup | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51, 51] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000109 | PC: 00087 | STEP: 1 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51, 51] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 3
+TICK: 000110 | PC: 00092 | STEP: 0 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51] | RS: [80, 246, 1, 0] | MEM: write mem[3] <- 51 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000111 | PC: 00093 | STEP: 0 | IR: drop | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000112 | PC: 00093 | STEP: 1 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 3
+TICK: 000113 | PC: 00098 | STEP: 0 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51] | RS: [80, 246, 1, 0] | MEM: read mem[3] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000114 | PC: 00103 | STEP: 0 | IR: literal 10 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51, 10] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 10
+TICK: 000115 | PC: 00103 | STEP: 1 | IR: sub | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000116 | PC: 00104 | STEP: 0 | IR: sub | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 41] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000117 | PC: 00104 | STEP: 1 | IR: nif 126 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000118 | PC: 00126 | STEP: 0 | IR: nif 126 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000119 | PC: 00126 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000120 | PC: 00131 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 0] | RS: [80, 246, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000121 | PC: 00136 | STEP: 0 | IR: literal 0 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 0, 0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000122 | PC: 00136 | STEP: 1 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000123 | PC: 00137 | STEP: 0 | IR: sub | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000124 | PC: 00137 | STEP: 1 | IR: nif 159 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000125 | PC: 00142 | STEP: 0 | IR: nif 159 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000126 | PC: 00142 | STEP: 1 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 3
+TICK: 000127 | PC: 00147 | STEP: 0 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51] | RS: [80, 246, 1, 0] | MEM: read mem[3] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000128 | PC: 00148 | STEP: 0 | IR: dup | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51, 51] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000129 | PC: 00148 | STEP: 1 | IR: store 4 | A: 0 | AR: 4 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51, 51] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 4
+TICK: 000130 | PC: 00153 | STEP: 0 | IR: store 4 | A: 0 | AR: 4 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 51] | RS: [80, 246, 1, 0] | MEM: write mem[4] <- 51 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000131 | PC: 00154 | STEP: 0 | IR: drop | A: 0 | AR: 4 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000132 | PC: 00204 | STEP: 0 | IR: jmp 204 | A: 0 | AR: 4 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | jmp 204
+TICK: 000133 | PC: 00204 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000134 | PC: 00209 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 0] | RS: [80, 246, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000135 | PC: 00214 | STEP: 0 | IR: literal 1 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 0, 1] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 1
+TICK: 000136 | PC: 00214 | STEP: 1 | IR: add | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | add.load_operands
+TICK: 000137 | PC: 00215 | STEP: 0 | IR: add | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | add.write_result
+TICK: 000138 | PC: 00216 | STEP: 0 | IR: dup | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1, 1] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000139 | PC: 00216 | STEP: 1 | IR: store 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1, 1] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 1
+TICK: 000140 | PC: 00221 | STEP: 0 | IR: store 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1] | RS: [80, 246, 1, 0] | MEM: write mem[1] <- 1 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000141 | PC: 00222 | STEP: 0 | IR: drop | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000142 | PC: 00222 | STEP: 1 | IR: iret | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1] | MEM: - | LATCH: A | OUT: '' | iret.restore_a
+TICK: 000143 | PC: 00222 | STEP: 2 | IR: iret | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246] | MEM: - | LATCH: NZ | OUT: '' | iret.restore_status
+TICK: 000144 | PC: 00246 | STEP: 0 | IR: iret | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: PC,IE,IN_INTR | OUT: '' | iret.restore_pc
+TICK: 000145 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000146 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000147 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000148 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000149 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000150 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000151 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000152 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000153 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000154 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000155 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000156 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000157 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000158 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000159 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000160 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000161 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000162 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000163 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000164 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000165 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000166 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000167 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000168 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000169 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000170 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000171 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000172 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000173 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000174 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000175 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000176 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000177 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000178 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000179 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000180 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000181 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000182 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000183 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000184 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000185 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000186 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000187 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000188 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000189 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000190 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000191 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000192 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000193 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000194 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000195 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000196 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000197 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000198 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000199 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000200 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000201 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000202 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000203 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000204 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000205 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000206 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000207 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000208 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000209 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000210 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000211 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000212 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000213 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000214 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000215 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000216 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000217 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000218 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000219 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000220 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000221 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000222 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000223 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000224 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000225 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000226 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000227 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000228 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000229 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000230 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000231 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000232 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000233 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000234 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000235 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000236 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000237 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000238 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000239 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000240 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000241 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000242 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000243 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000244 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000245 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000246 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000247 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000248 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000249 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000250 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000251 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000252 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000253 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000254 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000255 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000256 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000257 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000258 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000259 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000260 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000261 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000262 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000263 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000264 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000265 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000266 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000267 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000268 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000269 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000270 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000271 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000272 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000273 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000274 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000275 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000276 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000277 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000278 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000279 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000280 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000281 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000282 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000283 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000284 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000285 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000286 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000287 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000288 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000289 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000290 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000291 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000292 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000293 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000294 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000295 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000296 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000297 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000298 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000299 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000300 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235] | MEM: - | LATCH: IN_PORT,RS.push(PC) | OUT: '' | INT ENTRY: push PC
+TICK: 000301 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1] | MEM: - | LATCH: RS.push(SR) | OUT: '' | INT ENTRY: push SR
+TICK: 000302 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: RS.push(A) | OUT: '' | INT ENTRY: push A
+TICK: 000303 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | INT ENTRY: AR <- 0
+TICK: 000304 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [81] | RS: [80, 235, 1, 0] | MEM: read mem[0] | LATCH: DS.push(vector) | OUT: '' | INT ENTRY: read vector
+TICK: 000305 | PC: 00081 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | INT ENTRY: PC <- vector
+TICK: 000306 | PC: 00081 | STEP: 1 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 31998
+TICK: 000307 | PC: 00086 | STEP: 0 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49] | RS: [80, 235, 1, 0] | MEM: read mem[31998] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000308 | PC: 00087 | STEP: 0 | IR: dup | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49, 49] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000309 | PC: 00087 | STEP: 1 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49, 49] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 3
+TICK: 000310 | PC: 00092 | STEP: 0 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49] | RS: [80, 235, 1, 0] | MEM: write mem[3] <- 49 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000311 | PC: 00093 | STEP: 0 | IR: drop | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000312 | PC: 00093 | STEP: 1 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 3
+TICK: 000313 | PC: 00098 | STEP: 0 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49] | RS: [80, 235, 1, 0] | MEM: read mem[3] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000314 | PC: 00103 | STEP: 0 | IR: literal 10 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49, 10] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 10
+TICK: 000315 | PC: 00103 | STEP: 1 | IR: sub | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000316 | PC: 00104 | STEP: 0 | IR: sub | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [39] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000317 | PC: 00104 | STEP: 1 | IR: nif 126 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000318 | PC: 00126 | STEP: 0 | IR: nif 126 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000319 | PC: 00126 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000320 | PC: 00131 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [1] | RS: [80, 235, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000321 | PC: 00136 | STEP: 0 | IR: literal 0 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [1, 0] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000322 | PC: 00136 | STEP: 1 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000323 | PC: 00137 | STEP: 0 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [1] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000324 | PC: 00137 | STEP: 1 | IR: nif 159 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000325 | PC: 00159 | STEP: 0 | IR: nif 159 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000326 | PC: 00159 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000327 | PC: 00164 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [1] | RS: [80, 235, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000328 | PC: 00169 | STEP: 0 | IR: literal 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [1, 1] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 1
+TICK: 000329 | PC: 00169 | STEP: 1 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000330 | PC: 00170 | STEP: 0 | IR: sub | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000331 | PC: 00170 | STEP: 1 | IR: nif 192 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000332 | PC: 00175 | STEP: 0 | IR: nif 192 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000333 | PC: 00175 | STEP: 1 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 3
+TICK: 000334 | PC: 00180 | STEP: 0 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49] | RS: [80, 235, 1, 0] | MEM: read mem[3] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000335 | PC: 00181 | STEP: 0 | IR: dup | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49, 49] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000336 | PC: 00181 | STEP: 1 | IR: store 5 | A: 0 | AR: 5 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49, 49] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 5
+TICK: 000337 | PC: 00186 | STEP: 0 | IR: store 5 | A: 0 | AR: 5 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [49] | RS: [80, 235, 1, 0] | MEM: write mem[5] <- 49 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000338 | PC: 00187 | STEP: 0 | IR: drop | A: 0 | AR: 5 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000339 | PC: 00204 | STEP: 0 | IR: jmp 204 | A: 0 | AR: 5 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | jmp 204
+TICK: 000340 | PC: 00204 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000341 | PC: 00209 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [1] | RS: [80, 235, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000342 | PC: 00214 | STEP: 0 | IR: literal 1 | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [1, 1] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 1
+TICK: 000343 | PC: 00214 | STEP: 1 | IR: add | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | add.load_operands
+TICK: 000344 | PC: 00215 | STEP: 0 | IR: add | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [2] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | add.write_result
+TICK: 000345 | PC: 00216 | STEP: 0 | IR: dup | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [2, 2] | RS: [80, 235, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000346 | PC: 00216 | STEP: 1 | IR: store 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [2, 2] | RS: [80, 235, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 1
+TICK: 000347 | PC: 00221 | STEP: 0 | IR: store 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [2] | RS: [80, 235, 1, 0] | MEM: write mem[1] <- 2 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000348 | PC: 00222 | STEP: 0 | IR: drop | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000349 | PC: 00222 | STEP: 1 | IR: iret | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235, 1] | MEM: - | LATCH: A | OUT: '' | iret.restore_a
+TICK: 000350 | PC: 00222 | STEP: 2 | IR: iret | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [] | RS: [80, 235] | MEM: - | LATCH: NZ | OUT: '' | iret.restore_status
+TICK: 000351 | PC: 00235 | STEP: 0 | IR: iret | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC,IE,IN_INTR | OUT: '' | iret.restore_pc
+TICK: 000352 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000353 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000354 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000355 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000356 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000357 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000358 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000359 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000360 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000361 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000362 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000363 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000364 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000365 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000366 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000367 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000368 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000369 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000370 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000371 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000372 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000373 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000374 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000375 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000376 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000377 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000378 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000379 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000380 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000381 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000382 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000383 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000384 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000385 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000386 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000387 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000388 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000389 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000390 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000391 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000392 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000393 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000394 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000395 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000396 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000397 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000398 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000399 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000400 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000401 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000402 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000403 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000404 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000405 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000406 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000407 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000408 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000409 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000410 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000411 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000412 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000413 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000414 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000415 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000416 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000417 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000418 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000419 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000420 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000421 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000422 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000423 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000424 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000425 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000426 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000427 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000428 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000429 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000430 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000431 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000432 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000433 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000434 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000435 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000436 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000437 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000438 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000439 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000440 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000441 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000442 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000443 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000444 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000445 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000446 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000447 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000448 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000449 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000450 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000451 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000452 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000453 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000454 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000455 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000456 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000457 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000458 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000459 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000460 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000461 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000462 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000463 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000464 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000465 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000466 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000467 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000468 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000469 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000470 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000471 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000472 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000473 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000474 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000475 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000476 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000477 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000478 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000479 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000480 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000481 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000482 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000483 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000484 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000485 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000486 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000487 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000488 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000489 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000490 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000491 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000492 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000493 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000494 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000495 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000496 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000497 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000498 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000499 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000500 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000501 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246] | MEM: - | LATCH: IN_PORT,RS.push(PC) | OUT: '' | INT ENTRY: push PC
+TICK: 000502 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1] | MEM: - | LATCH: RS.push(SR) | OUT: '' | INT ENTRY: push SR
+TICK: 000503 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: RS.push(A) | OUT: '' | INT ENTRY: push A
+TICK: 000504 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | INT ENTRY: AR <- 0
+TICK: 000505 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 81] | RS: [80, 246, 1, 0] | MEM: read mem[0] | LATCH: DS.push(vector) | OUT: '' | INT ENTRY: read vector
+TICK: 000506 | PC: 00081 | STEP: 0 | IR: sub | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | INT ENTRY: PC <- vector
+TICK: 000507 | PC: 00081 | STEP: 1 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 31998
+TICK: 000508 | PC: 00086 | STEP: 0 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50] | RS: [80, 246, 1, 0] | MEM: read mem[31998] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000509 | PC: 00087 | STEP: 0 | IR: dup | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50, 50] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000510 | PC: 00087 | STEP: 1 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50, 50] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 3
+TICK: 000511 | PC: 00092 | STEP: 0 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50] | RS: [80, 246, 1, 0] | MEM: write mem[3] <- 50 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000512 | PC: 00093 | STEP: 0 | IR: drop | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000513 | PC: 00093 | STEP: 1 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 3
+TICK: 000514 | PC: 00098 | STEP: 0 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50] | RS: [80, 246, 1, 0] | MEM: read mem[3] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000515 | PC: 00103 | STEP: 0 | IR: literal 10 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50, 10] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 10
+TICK: 000516 | PC: 00103 | STEP: 1 | IR: sub | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000517 | PC: 00104 | STEP: 0 | IR: sub | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 40] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000518 | PC: 00104 | STEP: 1 | IR: nif 126 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000519 | PC: 00126 | STEP: 0 | IR: nif 126 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000520 | PC: 00126 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000521 | PC: 00131 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 2] | RS: [80, 246, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000522 | PC: 00136 | STEP: 0 | IR: literal 0 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 2, 0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000523 | PC: 00136 | STEP: 1 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000524 | PC: 00137 | STEP: 0 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 2] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000525 | PC: 00137 | STEP: 1 | IR: nif 159 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000526 | PC: 00159 | STEP: 0 | IR: nif 159 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000527 | PC: 00159 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000528 | PC: 00164 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 2] | RS: [80, 246, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000529 | PC: 00169 | STEP: 0 | IR: literal 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 2, 1] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 1
+TICK: 000530 | PC: 00169 | STEP: 1 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000531 | PC: 00170 | STEP: 0 | IR: sub | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000532 | PC: 00170 | STEP: 1 | IR: nif 192 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000533 | PC: 00192 | STEP: 0 | IR: nif 192 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000534 | PC: 00192 | STEP: 1 | IR: load 3 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 3
+TICK: 000535 | PC: 00197 | STEP: 0 | IR: load 3 | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50] | RS: [80, 246, 1, 0] | MEM: read mem[3] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000536 | PC: 00198 | STEP: 0 | IR: dup | A: 0 | AR: 3 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50, 50] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000537 | PC: 00198 | STEP: 1 | IR: store 6 | A: 0 | AR: 6 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50, 50] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 6
+TICK: 000538 | PC: 00203 | STEP: 0 | IR: store 6 | A: 0 | AR: 6 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 50] | RS: [80, 246, 1, 0] | MEM: write mem[6] <- 50 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000539 | PC: 00204 | STEP: 0 | IR: drop | A: 0 | AR: 6 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000540 | PC: 00204 | STEP: 1 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 1
+TICK: 000541 | PC: 00209 | STEP: 0 | IR: load 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 2] | RS: [80, 246, 1, 0] | MEM: read mem[1] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000542 | PC: 00214 | STEP: 0 | IR: literal 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 2, 1] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 1
+TICK: 000543 | PC: 00214 | STEP: 1 | IR: add | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | add.load_operands
+TICK: 000544 | PC: 00215 | STEP: 0 | IR: add | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 3] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | add.write_result
+TICK: 000545 | PC: 00216 | STEP: 0 | IR: dup | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 3, 3] | RS: [80, 246, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000546 | PC: 00216 | STEP: 1 | IR: store 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 3, 3] | RS: [80, 246, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 1
+TICK: 000547 | PC: 00221 | STEP: 0 | IR: store 1 | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 3] | RS: [80, 246, 1, 0] | MEM: write mem[1] <- 3 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000548 | PC: 00222 | STEP: 0 | IR: drop | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000549 | PC: 00222 | STEP: 1 | IR: iret | A: 0 | AR: 1 | NZ: 00 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246, 1] | MEM: - | LATCH: A | OUT: '' | iret.restore_a
+TICK: 000550 | PC: 00222 | STEP: 2 | IR: iret | A: 0 | AR: 1 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 246] | MEM: - | LATCH: NZ | OUT: '' | iret.restore_status
+TICK: 000551 | PC: 00246 | STEP: 0 | IR: iret | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: PC,IE,IN_INTR | OUT: '' | iret.restore_pc
+TICK: 000552 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000553 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000554 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 1 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000555 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000556 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000557 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000558 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000559 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000560 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000561 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000562 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000563 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000564 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000565 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000566 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000567 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000568 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000569 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000570 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000571 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000572 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000573 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000574 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000575 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000576 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000577 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000578 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000579 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000580 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000581 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000582 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000583 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000584 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000585 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000586 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000587 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000588 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000589 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000590 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000591 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000592 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000593 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000594 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000595 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000596 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000597 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000598 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000599 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000600 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000601 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000602 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000603 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000604 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000605 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000606 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000607 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000608 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000609 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000610 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000611 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000612 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000613 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000614 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000615 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000616 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000617 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000618 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000619 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000620 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000621 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000622 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000623 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000624 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000625 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000626 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000627 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000628 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000629 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000630 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000631 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000632 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000633 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000634 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000635 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000636 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000637 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000638 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000639 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000640 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000641 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000642 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000643 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000644 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000645 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000646 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000647 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000648 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000649 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000650 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000651 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000652 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000653 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000654 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000655 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000656 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000657 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000658 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000659 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000660 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000661 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000662 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000663 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000664 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000665 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000666 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000667 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000668 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000669 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000670 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000671 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000672 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000673 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000674 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000675 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000676 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000677 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000678 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000679 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000680 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000681 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000682 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000683 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000684 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000685 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000686 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000687 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000688 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000689 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000690 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000691 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000692 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000693 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000694 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000695 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000696 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000697 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000698 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000699 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000700 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000701 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240] | MEM: - | LATCH: IN_PORT,RS.push(PC) | OUT: '' | INT ENTRY: push PC
+TICK: 000702 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1] | MEM: - | LATCH: RS.push(SR) | OUT: '' | INT ENTRY: push SR
+TICK: 000703 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: RS.push(A) | OUT: '' | INT ENTRY: push A
+TICK: 000704 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: AR | OUT: '' | INT ENTRY: AR <- 0
+TICK: 000705 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 81] | RS: [80, 240, 1, 0] | MEM: read mem[0] | LATCH: DS.push(vector) | OUT: '' | INT ENTRY: read vector
+TICK: 000706 | PC: 00081 | STEP: 0 | IR: load 2 | A: 0 | AR: 0 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: PC | OUT: '' | INT ENTRY: PC <- vector
+TICK: 000707 | PC: 00081 | STEP: 1 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 31998
+TICK: 000708 | PC: 00086 | STEP: 0 | IR: load 31998 | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 10] | RS: [80, 240, 1, 0] | MEM: read mem[31998] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000709 | PC: 00087 | STEP: 0 | IR: dup | A: 0 | AR: 31998 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 10, 10] | RS: [80, 240, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000710 | PC: 00087 | STEP: 1 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 10, 10] | RS: [80, 240, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 3
+TICK: 000711 | PC: 00092 | STEP: 0 | IR: store 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 10] | RS: [80, 240, 1, 0] | MEM: write mem[3] <- 10 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000712 | PC: 00093 | STEP: 0 | IR: drop | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000713 | PC: 00093 | STEP: 1 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: AR | OUT: '' | load.addr 3
+TICK: 000714 | PC: 00098 | STEP: 0 | IR: load 3 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 10] | RS: [80, 240, 1, 0] | MEM: read mem[3] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000715 | PC: 00103 | STEP: 0 | IR: literal 10 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 10, 10] | RS: [80, 240, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 10
+TICK: 000716 | PC: 00103 | STEP: 1 | IR: sub | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000717 | PC: 00104 | STEP: 0 | IR: sub | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000718 | PC: 00104 | STEP: 1 | IR: nif 126 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000719 | PC: 00109 | STEP: 0 | IR: nif 126 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000720 | PC: 00114 | STEP: 0 | IR: literal 1 | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1] | RS: [80, 240, 1, 0] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 1
+TICK: 000721 | PC: 00115 | STEP: 0 | IR: dup | A: 0 | AR: 3 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1, 1] | RS: [80, 240, 1, 0] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000722 | PC: 00115 | STEP: 1 | IR: store 2 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1, 1] | RS: [80, 240, 1, 0] | MEM: - | LATCH: AR | OUT: '' | store.addr 2
+TICK: 000723 | PC: 00120 | STEP: 0 | IR: store 2 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0, 1] | RS: [80, 240, 1, 0] | MEM: write mem[2] <- 1 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000724 | PC: 00121 | STEP: 0 | IR: drop | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000725 | PC: 00222 | STEP: 0 | IR: jmp 222 | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1, 0] | MEM: - | LATCH: PC | OUT: '' | jmp 222
+TICK: 000726 | PC: 00222 | STEP: 1 | IR: iret | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240, 1] | MEM: - | LATCH: A | OUT: '' | iret.restore_a
+TICK: 000727 | PC: 00222 | STEP: 2 | IR: iret | A: 0 | AR: 2 | NZ: 01 | IE: 0 | PENDING: 0 | IN_INTR: 1 | DS: [0] | RS: [80, 240] | MEM: - | LATCH: NZ | OUT: '' | iret.restore_status
+TICK: 000728 | PC: 00240 | STEP: 0 | IR: iret | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: PC,IE,IN_INTR | OUT: '' | iret.restore_pc
+TICK: 000729 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000730 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000731 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000732 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000733 | PC: 00251 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000734 | PC: 00235 | STEP: 0 | IR: jmp 235 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | jmp 235
+TICK: 000735 | PC: 00235 | STEP: 1 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 2
+TICK: 000736 | PC: 00240 | STEP: 0 | IR: load 2 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [1] | RS: [80] | MEM: read mem[2] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000737 | PC: 00245 | STEP: 0 | IR: literal 0 | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [1, 0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '' | literal 0
+TICK: 000738 | PC: 00245 | STEP: 1 | IR: sub | A: 0 | AR: 2 | NZ: 01 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000739 | PC: 00246 | STEP: 0 | IR: sub | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [1] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000740 | PC: 00246 | STEP: 1 | IR: nif 256 | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | nif.test
+TICK: 000741 | PC: 00256 | STEP: 0 | IR: nif 256 | A: 0 | AR: 2 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | nif.branch
+TICK: 000742 | PC: 00256 | STEP: 1 | IR: load 5 | A: 0 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 5
+TICK: 000743 | PC: 00261 | STEP: 0 | IR: load 5 | A: 0 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [80] | MEM: read mem[5] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000744 | PC: 00261 | STEP: 1 | IR: load 4 | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 4
+TICK: 000745 | PC: 00266 | STEP: 0 | IR: load 4 | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49, 51] | RS: [80] | MEM: read mem[4] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000746 | PC: 00266 | STEP: 1 | IR: sub | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000747 | PC: 00267 | STEP: 0 | IR: sub | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [-2] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000748 | PC: 00267 | STEP: 1 | IR: mif 308 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | mif.test
+TICK: 000749 | PC: 00272 | STEP: 0 | IR: mif 308 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | mif.branch
+TICK: 000750 | PC: 00272 | STEP: 1 | IR: load 4 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 4
+TICK: 000751 | PC: 00277 | STEP: 0 | IR: load 4 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: read mem[4] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000752 | PC: 00278 | STEP: 0 | IR: dup | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000753 | PC: 00278 | STEP: 1 | IR: store 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | store.addr 7
+TICK: 000754 | PC: 00283 | STEP: 0 | IR: store 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: write mem[7] <- 51 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000755 | PC: 00284 | STEP: 0 | IR: drop | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000756 | PC: 00284 | STEP: 1 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 5
+TICK: 000757 | PC: 00289 | STEP: 0 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [80] | MEM: read mem[5] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000758 | PC: 00290 | STEP: 0 | IR: dup | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49, 49] | RS: [80] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000759 | PC: 00290 | STEP: 1 | IR: store 4 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49, 49] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | store.addr 4
+TICK: 000760 | PC: 00295 | STEP: 0 | IR: store 4 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [80] | MEM: write mem[4] <- 49 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000761 | PC: 00296 | STEP: 0 | IR: drop | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000762 | PC: 00296 | STEP: 1 | IR: load 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 7
+TICK: 000763 | PC: 00301 | STEP: 0 | IR: load 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: read mem[7] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000764 | PC: 00302 | STEP: 0 | IR: dup | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000765 | PC: 00302 | STEP: 1 | IR: store 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | store.addr 5
+TICK: 000766 | PC: 00307 | STEP: 0 | IR: store 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: write mem[5] <- 51 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000767 | PC: 00308 | STEP: 0 | IR: drop | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000768 | PC: 00308 | STEP: 1 | IR: load 6 | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 6
+TICK: 000769 | PC: 00313 | STEP: 0 | IR: load 6 | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: read mem[6] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000770 | PC: 00313 | STEP: 1 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 5
+TICK: 000771 | PC: 00318 | STEP: 0 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50, 51] | RS: [80] | MEM: read mem[5] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000772 | PC: 00318 | STEP: 1 | IR: sub | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000773 | PC: 00319 | STEP: 0 | IR: sub | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [-1] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000774 | PC: 00319 | STEP: 1 | IR: mif 360 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | mif.test
+TICK: 000775 | PC: 00324 | STEP: 0 | IR: mif 360 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | mif.branch
+TICK: 000776 | PC: 00324 | STEP: 1 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 5
+TICK: 000777 | PC: 00329 | STEP: 0 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: read mem[5] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000778 | PC: 00330 | STEP: 0 | IR: dup | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000779 | PC: 00330 | STEP: 1 | IR: store 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | store.addr 7
+TICK: 000780 | PC: 00335 | STEP: 0 | IR: store 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: write mem[7] <- 51 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000781 | PC: 00336 | STEP: 0 | IR: drop | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000782 | PC: 00336 | STEP: 1 | IR: load 6 | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 6
+TICK: 000783 | PC: 00341 | STEP: 0 | IR: load 6 | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: read mem[6] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000784 | PC: 00342 | STEP: 0 | IR: dup | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50, 50] | RS: [80] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000785 | PC: 00342 | STEP: 1 | IR: store 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50, 50] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | store.addr 5
+TICK: 000786 | PC: 00347 | STEP: 0 | IR: store 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: write mem[5] <- 50 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000787 | PC: 00348 | STEP: 0 | IR: drop | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000788 | PC: 00348 | STEP: 1 | IR: load 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 7
+TICK: 000789 | PC: 00353 | STEP: 0 | IR: load 7 | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: read mem[7] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000790 | PC: 00354 | STEP: 0 | IR: dup | A: 0 | AR: 7 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: DS.dup,PC | OUT: '' | dup
+TICK: 000791 | PC: 00354 | STEP: 1 | IR: store 6 | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51, 51] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | store.addr 6
+TICK: 000792 | PC: 00359 | STEP: 0 | IR: store 6 | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: write mem[6] <- 51 | LATCH: MEM,PC | OUT: '' | store.write
+TICK: 000793 | PC: 00360 | STEP: 0 | IR: drop | A: 0 | AR: 6 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | drop
+TICK: 000794 | PC: 00360 | STEP: 1 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 5
+TICK: 000795 | PC: 00365 | STEP: 0 | IR: load 5 | A: 0 | AR: 5 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: read mem[5] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000796 | PC: 00365 | STEP: 1 | IR: load 4 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 4
+TICK: 000797 | PC: 00370 | STEP: 0 | IR: load 4 | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50, 49] | RS: [80] | MEM: read mem[4] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000798 | PC: 00370 | STEP: 1 | IR: sub | A: 0 | AR: 4 | NZ: 10 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left,ALU.right | OUT: '' | sub.load_operands
+TICK: 000799 | PC: 00371 | STEP: 0 | IR: sub | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [1] | RS: [80] | MEM: - | LATCH: DS.push(ALU),PC | OUT: '' | sub.write_result
+TICK: 000800 | PC: 00371 | STEP: 1 | IR: mif 412 | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: ALU.left | OUT: '' | mif.test
+TICK: 000801 | PC: 00412 | STEP: 0 | IR: mif 412 | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '' | mif.branch
+TICK: 000802 | PC: 00412 | STEP: 1 | IR: load 4 | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | load.addr 4
+TICK: 000803 | PC: 00417 | STEP: 0 | IR: load 4 | A: 0 | AR: 4 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [80] | MEM: read mem[4] | LATCH: DS.push,PC | OUT: '' | load.read
+TICK: 000804 | PC: 00417 | STEP: 1 | IR: store 31999 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [49] | RS: [80] | MEM: - | LATCH: AR | OUT: '' | store.addr 31999
+TICK: 000805 | PC: 00422 | STEP: 0 | IR: store 31999 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: write mem[31999] <- 49 | LATCH: OUT,PC | OUT: '1' | store.write
+TICK: 000806 | PC: 00427 | STEP: 0 | IR: literal 0 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '1' | literal 0
+TICK: 000807 | PC: 00428 | STEP: 0 | IR: drop | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '1' | drop
+TICK: 000808 | PC: 00428 | STEP: 1 | IR: load 5 | A: 0 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '1' | load.addr 5
+TICK: 000809 | PC: 00433 | STEP: 0 | IR: load 5 | A: 0 | AR: 5 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: read mem[5] | LATCH: DS.push,PC | OUT: '1' | load.read
+TICK: 000810 | PC: 00433 | STEP: 1 | IR: store 31999 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [50] | RS: [80] | MEM: - | LATCH: AR | OUT: '1' | store.addr 31999
+TICK: 000811 | PC: 00438 | STEP: 0 | IR: store 31999 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: write mem[31999] <- 50 | LATCH: OUT,PC | OUT: '12' | store.write
+TICK: 000812 | PC: 00443 | STEP: 0 | IR: literal 0 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '12' | literal 0
+TICK: 000813 | PC: 00444 | STEP: 0 | IR: drop | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '12' | drop
+TICK: 000814 | PC: 00444 | STEP: 1 | IR: load 6 | A: 0 | AR: 6 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: AR | OUT: '12' | load.addr 6
+TICK: 000815 | PC: 00449 | STEP: 0 | IR: load 6 | A: 0 | AR: 6 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: read mem[6] | LATCH: DS.push,PC | OUT: '12' | load.read
+TICK: 000816 | PC: 00449 | STEP: 1 | IR: store 31999 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [51] | RS: [80] | MEM: - | LATCH: AR | OUT: '12' | store.addr 31999
+TICK: 000817 | PC: 00454 | STEP: 0 | IR: store 31999 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: write mem[31999] <- 51 | LATCH: OUT,PC | OUT: '123' | store.write
+TICK: 000818 | PC: 00459 | STEP: 0 | IR: literal 0 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '123' | literal 0
+TICK: 000819 | PC: 00460 | STEP: 0 | IR: drop | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [] | RS: [80] | MEM: - | LATCH: PC | OUT: '123' | drop
+TICK: 000820 | PC: 00465 | STEP: 0 | IR: literal 0 | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [80] | MEM: - | LATCH: DS.push,PC | OUT: '123' | literal 0
+TICK: 000821 | PC: 00080 | STEP: 0 | IR: return | A: 0 | AR: 31999 | NZ: 00 | IE: 1 | PENDING: 0 | IN_INTR: 0 | DS: [0] | RS: [] | MEM: - | LATCH: PC | OUT: '123' | return

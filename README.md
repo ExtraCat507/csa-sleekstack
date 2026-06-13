@@ -289,32 +289,51 @@ ControlUnit -- hardwired. Он содержит:
 
 ## Тестирование
 
-Golden tests находятся в [tests/test_golden.py](./tests/test_golden.py), конфигурации -- в [golden](./golden).
+Golden tests находятся в [tests/test_golden.py](./tests/test_golden.py), эталоны -- в [golden](./golden).
+Каждый эталон хранится отдельным каталогом с исходной программой, бинарным кодом,
+дампом памяти, конфигурацией, полным потактовым журналом и stdout модели.
 
 Покрытые алгоритмы:
 
-- [hello](./golden/hello.json) -- печать `Hello, world!`;
-- [cat](./golden/cat.json) -- посимвольный ввод через `trap` и вывод входных данных;
-- [hello_user_name](./golden/hello_user_name.json) -- запрос имени и вывод `Hello, <name>!`;
-- [sort](./golden/sort.json) -- чтение трёх числовых символов и вывод их в отсортированном виде;
-- [double_precision](./golden/double_precision.json) -- демонстрация двухсловной арифметики;
-- [euler6](./golden/euler6.json) -- алгоритм варианта, Project Euler problem 6;
-- [features](./golden/features.json) -- функции, вызовы, возврат и ветвление.
+- [hello](./golden/hello/manifest.json) -- печать `Hello, world!`;
+- [cat](./golden/cat/manifest.json) -- посимвольный ввод через `trap` и вывод входных данных;
+- [hello_user_name](./golden/hello_user_name/manifest.json) -- запрос имени и вывод `Hello, <name>!`;
+- [sort](./golden/sort/manifest.json) -- чтение трёх числовых символов и вывод их в отсортированном виде;
+- [double_precision](./golden/double_precision/manifest.json) -- демонстрация двухсловной арифметики;
+- [euler6](./golden/euler6/manifest.json) -- алгоритм варианта, Project Euler problem 6;
+- [features](./golden/features/manifest.json) -- функции, вызовы, возврат и ветвление.
 
 Каждый golden test проверяет:
 
-- исходный алгоритм через SHA-256 исходного файла;
-- бинарный машинный код через SHA-256;
-- образ памяти данных и конфигурацию машины через SHA-256;
+- исходный алгоритм: `source.ss`;
+- расписание ввода, если есть: `input.schedule`;
+- бинарный машинный код байт-в-байт: `program.bin`;
+- листинг памяти команд и данных: `program.lst`;
+- образ памяти данных и конфигурацию машины: `config.json`;
+- полный потактовый журнал модели: `trace.log`;
 - вывод симулятора;
 - количество тактов;
-- репрезентативные фрагменты журнала процессора.
+- SHA-256 всех эталонных артефактов: `manifest.json`.
+
+Файлы эталона отвечают на проверяемые вопросы напрямую:
+
+- дамп памяти данных находится в `program.lst` и `config.json`;
+- потактовый вывод находится в `trace.log`;
+- состояния регистров `PC`, `A`, `AR`, `NZ`, `IE`, флагов прерываний, стеков и защёлок записаны в каждой строке `trace.log`;
+- программа в байтовом виде находится в `program.bin`, а читаемая расшифровка байтов -- в `program.lst`;
+- сама программа находится в `source.ss`.
 
 Запустить тесты:
 
 ```shell
 python -m py_compile translator.py isa.py machine.py
 python -m unittest tests.test_golden -v
+```
+
+Перегенерировать эталоны после намеренного изменения транслятора или модели:
+
+```shell
+python tests/update_golden.py
 ```
 
 Пример ручного запуска:
