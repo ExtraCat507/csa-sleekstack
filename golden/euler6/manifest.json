@@ -1,0 +1,16 @@
+{
+    "case": "euler6",
+    "source": "source.ss",
+    "schedule": null,
+    "output": "25164150 ",
+    "ticks": 4144,
+    "artifacts": {
+        "source_sha256": "4d2a309ddb57953aed57884c6b5c923bcc5cc7bcc45161e823565192cb05ad31",
+        "machine_code_sha256": "5ee20fde37560ae93e0809c055f6ad1aa174b1abe695da225cbd3b459ff0753e",
+        "listing_sha256": "2c3b987e0a972da4b0866b0e259039cad9fa672a813b0bd04e7a2836e19adb83",
+        "config_sha256": "f0f42b87861283e616ab94bd4b3628b45cc49e5a4eedb8bc261b58e8efdf7d6a",
+        "data_image_sha256": "d52c23652b2760da537b3183f8fe8a856821923b07c40fa001809f5f0ae2ce17",
+        "trace_sha256": "72cd3a80003c6e7a978819313d022c7547d89962e16afda51204431dd05a779f",
+        "stdout_sha256": "a9a8d2c2dba2a364014cff535a1ba259aef9b1af9980ba77b1e3da442e0164c1"
+    }
+}

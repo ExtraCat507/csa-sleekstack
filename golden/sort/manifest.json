@@ -1,0 +1,17 @@
+{
+    "case": "sort",
+    "source": "source.ss",
+    "schedule": "input.schedule",
+    "output": "123",
+    "ticks": 822,
+    "artifacts": {
+        "source_sha256": "fe3c3aac6498e544fa7f7c42e2b3c1bc6b874b542911345401bb997abd7e5c78",
+        "machine_code_sha256": "fbc1f9115b204337daa312003130ed74aaa25556faa054d232e6eedf545e3027",
+        "listing_sha256": "b575bfe2679bf2963658901385d333725c868a9e6f27fbc86fbe7a4f3b5aefa2",
+        "config_sha256": "5cb63f0e2fe283e8b942a2ff02ab42bf80924f38f9bb17a3bf66e1b9d67d6c96",
+        "data_image_sha256": "afd646052975cd97304d8c9ec2048e859faafd585de846147830ce4f7cef6d42",
+        "trace_sha256": "9f2b537ced6289b231298409185bc564039949de6fd4d6a56e638cc1ae079638",
+        "stdout_sha256": "e039be968ee658e818aa85b7ccc4cd949827feaf12eb1aaf014de15f8a643f34",
+        "schedule_sha256": "14bc54b992ad624c833679eac3ad83d14c334c0eb03d23ffcc618180200913e7"
+    }
+}
