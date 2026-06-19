@@ -277,6 +277,7 @@ class ControlUnit:
         self.pc = entry_point
         self.tick_no = 0
         self.step = 0
+        self.ir_valid = False
         self.ir_opcode: Opcode | None = None
         self.ir_arg = 0
         self.ie = True
@@ -306,9 +307,9 @@ class ControlUnit:
         self.tick_no += 1
 
     def _process_tick(self, batch: LatchBatch) -> str:
-        if self.step == 0 and not self.entering_interrupt:
+        if not self.ir_valid and self.step == 0 and not self.entering_interrupt:
             self._check_interrupt_schedule(batch)
-        if self.step == 0 and not self.entering_interrupt and self.pending_interrupt and self.ie:
+        if not self.ir_valid and self.step == 0 and not self.entering_interrupt and self.pending_interrupt and self.ie:
             self.entering_interrupt = True
             self.int_step = 0
             self.pending_interrupt = False
@@ -318,12 +319,14 @@ class ControlUnit:
         if self.entering_interrupt:
             return self._process_interrupt_entry(batch)
 
-        opcode, arg = self._fetch_instruction()
-        self.ir_opcode = opcode
-        self.ir_arg = arg
-        if opcode is Opcode.HALT:
+        if not self.ir_valid:
+            return self._fetch_instruction(batch)
+
+        if self.ir_opcode is Opcode.HALT:
             raise StopIteration
-        return self._execute_instruction(opcode, arg, batch)
+        if self.ir_opcode is None:
+            raise HardwareError("Instruction register is empty")
+        return self._execute_instruction(self.ir_opcode, self.ir_arg, batch)
 
     def _check_interrupt_schedule(self, batch: LatchBatch) -> None:
         while self.input_schedule and self.tick_no >= self.input_schedule[0][0]:
@@ -359,7 +362,7 @@ class ControlUnit:
         self.int_step = 0
         return "INT ENTRY: PC <- vector"
 
-    def _fetch_instruction(self) -> tuple[Opcode, int]:
+    def _fetch_instruction(self, batch: LatchBatch) -> str:
         if self.pc < 0 or self.pc >= self.program_size:
             raise HardwareError(f"Program counter out of loaded code range: {self.pc}")
         opcode_byte = self.command_memory[self.pc]
@@ -372,7 +375,13 @@ class ControlUnit:
                 raise HardwareError(f"Truncated argument for {opcode.value} at PC {self.pc}")
             arg_bytes = bytes(self.command_memory[self.pc + 1 : self.pc + 5])
             arg = int.from_bytes(arg_bytes, byteorder="big", signed=True)
-        return opcode, arg
+        batch.add("IR", lambda opcode=opcode, arg=arg: self._latch_ir(opcode, arg))
+        return f"fetch {opcode.value}{f' {arg}' if opcode in ARG_OPCODES else ''}"
+
+    def _latch_ir(self, opcode: Opcode, arg: int) -> None:
+        self.ir_opcode = opcode
+        self.ir_arg = arg
+        self.ir_valid = True
 
     def _execute_instruction(self, opcode: Opcode, arg: int, batch: LatchBatch) -> str:
         if opcode is Opcode.LIT:
@@ -427,7 +436,7 @@ class ControlUnit:
         }:
             return self._execute_alu(opcode, batch)
         if opcode is Opcode.JMP:
-            batch.add("PC", lambda arg=arg: setattr(self, "pc", arg))
+            self._latch_pc(batch, arg)
             return f"{opcode.value} {arg}"
         if opcode is Opcode.IF:
             return self._execute_conditional(opcode, arg, batch, condition=lambda: self.dp.alu.flag_z)
@@ -438,11 +447,11 @@ class ControlUnit:
         if opcode is Opcode.CALL:
             return_address = self.pc + 5
             self.dp.push_return(return_address, batch, "RS.push(ret)")
-            batch.add("PC", lambda arg=arg: setattr(self, "pc", arg))
+            self._latch_pc(batch, arg)
             return f"{opcode.value} {arg}"
         if opcode is Opcode.RET:
             address = self.dp.pop_return_now()
-            batch.add("PC", lambda address=address: setattr(self, "pc", address))
+            self._latch_pc(batch, address)
             return opcode.value
         if opcode is Opcode.RINTOT:
             value = self.dp.pop_return_now()
@@ -556,7 +565,7 @@ class ControlUnit:
             return f"{opcode.value}.test"
         self.dp.alu.pass_left()
         if condition():
-            batch.add("PC", lambda arg=arg: setattr(self, "pc", arg))
+            self._latch_pc(batch, arg)
         else:
             self._latch_next_pc(batch, opcode)
         self.step = 0
@@ -574,19 +583,26 @@ class ControlUnit:
             self.step = 2
             return "iret.restore_status"
         address = self.dp.pop_return_now()
-        batch.add("PC", lambda address=address: setattr(self, "pc", address))
+        self._latch_pc(batch, address)
         batch.add("IE", lambda: setattr(self, "ie", True))
         batch.add("IN_INTR", lambda: setattr(self, "in_interrupt", False))
         self.step = 0
         return "iret.restore_pc"
 
+    def _latch_pc(self, batch: LatchBatch, address: int) -> None:
+        batch.add("PC", lambda address=address: setattr(self, "pc", address))
+        batch.add("IR.clear", self._clear_ir)
+
     def _latch_next_pc(self, batch: LatchBatch, opcode: Opcode) -> None:
         next_pc = self.pc + (5 if opcode in ARG_OPCODES else 1)
-        batch.add("PC", lambda next_pc=next_pc: setattr(self, "pc", next_pc))
+        self._latch_pc(batch, next_pc)
+
+    def _clear_ir(self) -> None:
+        self.ir_valid = False
 
     def _log(self, action: str, committed: list[str]) -> None:
-        opcode = self.ir_opcode.value if self.ir_opcode else "----"
-        if self.ir_opcode in ARG_OPCODES:
+        opcode = self.ir_opcode.value if self.ir_opcode and not action.startswith("INT ENTRY") else "----"
+        if self.ir_opcode and not action.startswith("INT ENTRY") and self.ir_opcode in ARG_OPCODES:
             opcode = f"{opcode} {self.ir_arg}"
         output = self._format_output()
         line = (
