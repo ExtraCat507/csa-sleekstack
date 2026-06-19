@@ -1,0 +1,183 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
+  <diagram id="control-unit" name="ControlUnit">
+    <mxGraphModel dx="1500" dy="1093" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="ControlUnit" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=24;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="50" y="40" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="input_schedule" value="Input Schedule" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="760" y="110" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="interrupt_logic" value="Interrupt Logic&lt;div&gt;IE&lt;/div&gt;&lt;div&gt;pending_interrupt&lt;/div&gt;&lt;div&gt;in_interrupt&lt;/div&gt;&lt;div&gt;entering_interrupt&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1030" y="95" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_plus" value="PC + size" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13" parent="1" vertex="1">
+          <mxGeometry x="30" y="350" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_ir_arg" value="IR_ARG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13" parent="1" vertex="1">
+          <mxGeometry x="30" y="300" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_rs_pop" value="RS.pop" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13" parent="1" vertex="1">
+          <mxGeometry x="30" y="450" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_vector" value="int_vector" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13" parent="1" vertex="1">
+          <mxGeometry x="30" y="397.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pc_mux" value="PC_MUX" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rotation=90;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=13;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="262.5" y="377.5" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pc" value="PC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="400" y="370" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cmdmem" value="Command Memory" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="590" y="350" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fetch" value="Fetch" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="900" y="370" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ir" value="IR&lt;div&gt;IR_OPCODE&lt;/div&gt;&lt;div&gt;IR_ARG&lt;/div&gt;&lt;div&gt;IR_VALID&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1110" y="330" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="decoder" value="Decoder" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1360" y="360" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sequencer" value="Sequencer&lt;div&gt;step&lt;/div&gt;&lt;div&gt;int_step&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=15;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1360" y="540" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="signal_logic" value="Signal Logic" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1040" y="755" width="230" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="latch_batch" value="LatchBatch" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1350" y="780" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="datapath_if" value="DataPath Interface" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="1590" y="690" width="200" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sched_interrupt" value="tick,value" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="input_schedule" target="interrupt_logic" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_interrupt_seq" value="interrupt_entry" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;" parent="1" source="interrupt_logic" target="sequencer" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1600" y="150" />
+              <mxPoint x="1600" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_pc_plus_mux" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="pc_plus" target="pc_mux" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ir_arg_mux" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=0.177;entryY=0.968;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="pc_ir_arg" target="pc_mux" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_rs_pop_mux" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="pc_rs_pop" target="pc_mux" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_vector_mux" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="pc_vector" target="pc_mux" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="418" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_pc_mux" value="latch_pc" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="500" as="sourcePoint" />
+            <mxPoint x="450" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_mux_pc" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="pc_mux" target="pc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pc_cmdmem" value="" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="pc" target="cmdmem" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cmdmem_fetch" value="cmd_bytes" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cmdmem" target="fetch" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_fetch_ir" value="opcode,arg" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="fetch" target="ir" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s_latch_ir" value="latch_ir" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" target="ir" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1205" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_ir_clear" value="IR.clear" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" target="ir" edge="1">
+          <mxGeometry y="25" relative="1" as="geometry">
+            <mxPoint x="1205" y="560" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_ir_decoder" value="opcode,arg" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="ir" target="decoder" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_decoder_seq" value="instr_class" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="decoder" target="sequencer" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_seq_logic" value="phase" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="sequencer" target="signal_logic" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1455" y="720" />
+              <mxPoint x="1155" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_step_next" value="step.next&#xa;int_step.next" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="sequencer" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="570" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_logic_latch" value="writes" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000" parent="1" source="signal_logic" target="latch_batch" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dp_decoder" value="N/Z" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000;jumpStyle=arc;" parent="1" source="datapath_if" target="decoder" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1690" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_irarg_dp" value="IR_ARG" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=0;entryY=0;entryDx=0;entryDy=0;jumpStyle=arc;" parent="1" source="ir" edge="1" target="datapath_if">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1560" y="690" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1205" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s_dp_commit" value="commit" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=0.001;entryY=0.437;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="latch_batch" target="datapath_if" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAk39gMddhpEr3qYRE5e-2" value="pc_sel" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="pc_mux">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="530" as="sourcePoint" />
+            <mxPoint x="319.8" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xAk39gMddhpEr3qYRE5e-3" value="control_signals" style="endArrow=block;html=1;rounded=0;dashed=1;dashPattern=6 6;strokeWidth=2;strokeColor=#000000;fontColor=#000000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="920" as="sourcePoint" />
+            <mxPoint x="1590" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

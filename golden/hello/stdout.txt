@@ -1,2 +1,2 @@
 Hello, world!
-ticks: 132
+ticks: 210

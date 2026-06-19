@@ -3,14 +3,14 @@
     "source": "source.ss",
     "schedule": null,
     "output": "OK",
-    "ticks": 54,
+    "ticks": 90,
     "artifacts": {
         "source_sha256": "e86bc84736a2d3455e670ce729b48b9e2f372c9ebc90f680771a7e2f5e5d101a",
         "machine_code_sha256": "ac3aadb15a214671168f8225b767b8ccfb68cef321b70c5fd9e25fc941446b0c",
         "listing_sha256": "f8be3e312487e5270cff3be848a1e89f3d43e1dced3dbd30d213f4b4a1460a0e",
         "config_sha256": "dbd2be839a9781c1cde53d36d414532369abc8c4ff577333e4dcbbabc3f9ad0f",
         "data_image_sha256": "e8fb6e554ffae88e1a476a33dc161031b07305320af41816ccad809ca140dbd7",
-        "trace_sha256": "77792bc211f64297e3095ce8ce2a7f6705cbaa8f28791bfc9d1b017e63b29142",
-        "stdout_sha256": "096a703f160367d72815bb38a265ae331292ea2af79330eb369e10fd08d836bd"
+        "trace_sha256": "d514f609cff95bb31803ffe2a68f96fcbe27dd32d0c169b4fe2c87c4524d2e6d",
+        "stdout_sha256": "5800085ac27ad9fbb18352916f7133dbe9ed71d3ae6f2c2af969e8ee2e8ec34a"
     }
 }

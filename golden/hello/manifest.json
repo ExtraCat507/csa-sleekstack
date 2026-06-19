@@ -3,14 +3,14 @@
     "source": "source.ss",
     "schedule": null,
     "output": "Hello, world!",
-    "ticks": 132,
+    "ticks": 210,
     "artifacts": {
         "source_sha256": "2766bc9e2f1a0ce6783cf92201f27f097ce21d110cdd1163f98eb51a21d7d710",
         "machine_code_sha256": "a73432701f0e1336b3deea533406daff93ea66f0b0bea275183ad1e32c6c772c",
         "listing_sha256": "3be8e54051364cfeca0223caee46ea6e16240ce3cf1de7f48ee08d7da58c8921",
         "config_sha256": "70ce02c73ef4e8fd22c062958d19eaed9f82c5173cd68a8abd7cf48b4a3d6666",
         "data_image_sha256": "e7fa9745bad783d50937e79fad3f03e537301414ea1acef4254eecc57825d97e",
-        "trace_sha256": "471925ebf134c79ca27fa84584cc02bc8904df57031cc429cb1770aa425bfa90",
-        "stdout_sha256": "217deebe0c3869c214dba9593b89865a2852c6d83f91b08cab60698369a11f1b"
+        "trace_sha256": "b107712f4ac26bc32424d9e5260fc871bf6b20787d4ff10dc5a75b51ea6d73d2",
+        "stdout_sha256": "6bc88518f69a80394850c60b49bb183eb0642571988b059fc103bbbf998ad027"
     }
 }

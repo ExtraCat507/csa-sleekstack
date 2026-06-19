@@ -3,15 +3,15 @@
     "source": "source.ss",
     "schedule": "input.schedule",
     "output": "cat",
-    "ticks": 737,
+    "ticks": 767,
     "artifacts": {
         "source_sha256": "40a4e696dfd4de46b151ac571b5ec1062213dc2a98ffa14e8860e7dfd061262e",
         "machine_code_sha256": "13832c7c9332b1e0695ff6f9a772e7eadc58d2a70c15a4e98be8c3078e7306d5",
         "listing_sha256": "4bbd169809c9c5c4993f5040167c825ef1d62e91107f72c7da4c8efa6ba68a1a",
         "config_sha256": "31525e93a66de42ebace62678d4b2d2e02c518221fe8455dcca6ff92a5fdc1dc",
         "data_image_sha256": "d88d1f9aaa031ad97df8d84987be4ecf1e77696f18b4d7d7ef5dea8d89106eaa",
-        "trace_sha256": "3d6bf6fdff9111284a879bf86779ce904faa9b9c101787a9f7dd8ce9b45d1c89",
-        "stdout_sha256": "3d518ab25ec0ee1c7abff2a89ef146bd7e82cc52c670309c0ec67c6568b05915",
+        "trace_sha256": "da8accaab9611d487331653ae955a4c2c60ddbb689fd28607e8aa86d3799f821",
+        "stdout_sha256": "67afcd712d308426f3cd89810459aa002df067b684659961b23996a22dd41c0a",
         "schedule_sha256": "ca2482ff7f448dd1e7ee61c7956f8b8703dabfb1d4cec14e679a47470aedf0c3"
     }
 }

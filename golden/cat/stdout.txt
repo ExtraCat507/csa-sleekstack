@@ -1,2 +1,2 @@
 cat
-ticks: 737
+ticks: 767
