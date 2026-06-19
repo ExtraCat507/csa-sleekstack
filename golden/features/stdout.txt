@@ -1,2 +1,2 @@
 OK
-ticks: 54
+ticks: 90

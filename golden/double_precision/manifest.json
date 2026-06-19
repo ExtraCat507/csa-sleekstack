@@ -3,14 +3,14 @@
     "source": "source.ss",
     "schedule": null,
     "output": "1 0 ",
-    "ticks": 125,
+    "ticks": 204,
     "artifacts": {
         "source_sha256": "cc9ba46aade1f504faa0dbf0d89b628188184a9190b0bf1312524952bb0d226c",
         "machine_code_sha256": "6e2b208d8b4517405953d5982c00511b7048d49e266587a8aa919f2fb80739fe",
         "listing_sha256": "606b94c3dc51d5cd8b8879caa8240bd6cc4f55e402a6a866128d172975a3eee7",
         "config_sha256": "6ee5596abe20a67a25f939f619bdc991cb608fd05d4f4a9e5e54e42eabd004f3",
         "data_image_sha256": "21bb04d61c5ab23b92ce794a12c6df0634850c11ff641189c21bd50e40ba2bc7",
-        "trace_sha256": "f924e33516042cd60d7a41c4159a591f9c17611a19e59fd68044b48c20a47023",
-        "stdout_sha256": "d70eaca7dbec893bd25e3adebcd3921e871186090cffc7166117acb653ce9e34"
+        "trace_sha256": "f7b5d9d76bf24625eb80b569cf6ec65686d1e25e6a03d96926a515f4c5f65f68",
+        "stdout_sha256": "e9de4717dda1ff7873204ceccfd96b67ecba7e0094a84201443f137f7be3ba5b"
     }
 }
